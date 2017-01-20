@@ -53,7 +53,7 @@ true
 
 10.
 4 == "4" || 4 == 4
-false || true
+true || true
 true
 
 11.
