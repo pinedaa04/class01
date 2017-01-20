@@ -1,0 +1,172 @@
+
+1) Create a loop table show the values for loop count, value of x, and output during each iteration.
+
+for (var x = 0; x <= 17; x = x + 2) {
+  console.log(2 * x + 7);
+}
+
+loop count      value of x      output
+1            	    0                7
+2               	 2               11
+3               	 4               15
+4               	 6               19
+5               	 8               23
+6               	10               27
+7              	 12               31
+8              	 14               35
+9              	 16               39              
+
+x = 0 		
+2 * x + 7		
+2 * 0 + 7		
+0 + 7 = 7			
+x = x+ 2		
+x = 0 + 2 = 2		
+x = 2	
+                       
+2 * x + 7 		
+2 * 2 + 7		
+4 + 7 = 11			
+x = x + 2		
+x = 2 + 2		
+x = 4	
+                       
+2 * x + 7		
+2 * 4 + 7 		
+8 + 7 = 15				
+x = x + 2		
+x = 4 + 2		
+x = 6	
+                       
+2 * x + 7		
+2 * 6 + 7		
+12 + 7 = 19	
+x = x + 2
+x = 6 +2
+X = 8
+                       
+2 * x + 7
+2 * 8 +7
+16 + 7
+23
+x = x + 2
+x = 8 +2
+X = 10
+                       
+2 * x + 7
+2 * 10 +7
+20 + 7
+27
+x = x + 2
+x = 10 +2
+X = 12                     
+                       
+2 * x + 7
+2 * 12 +7
+24 + 7
+31
+x = x + 2
+x = 12 +2
+X = 14
+                    
+2 * x + 7
+2 * 14 +7
+28 + 7
+35
+x = x + 2
+x = 14 +2
+X = 16
+                                
+2 * x + 7
+2 * 16 +7
+32 + 7
+39
+
+
+
+
+
+
+
+
+2) Create a loop table show the values for loop count, value of index, value of s1, value of s2, and output during each iteration.
+
+// check out page 15 in Head First JavaScript for
+// info about the substr() function below
+
+
+var alpha = 'mpeuorwr';
+var s1 = '';
+var s2 = '';
+
+for (var index = 0; index < alpha.length; index++) {
+  if (index % 2 == 0) {
+    s1 = s1 + alpha.substr(index, 1);
+  } else {
+    s2 = s2 + alpha.substr(index, 1);
+  }
+}
+
+console.log(s1 + s2);
+
+loop count  |value of index|  s1           |  	 s2       |          output
+1                     0               m              	 n/a                 m
+2                     1                -                 p                p 
+3                     2               m + e         	  -                      me
+4                      3               -              		 p + u                pu
+5                      4               m + e + o     	  -                       meo
+6                      5               -              		 p + u + r            pur
+7                      6            m + e + o + w  	 -                         meow
+8                       7               -           		p + u + r + r     purr
+
+console.log(s1 + s2); = meowpurr
+
+0 % 2 = 0
+s1 = '' + alpha.subst(0,1)
+s1 = 'm'
+
+
+index++ = 1
+1 % 2 = 1
+s2 = '' + alpha.subst(1,1)
+s2 = 'p'
+
+
+index++ = 2
+2 % 2 = 0
+s1 = 'm' + alpha.subst(2,1)
+s1 = 'm' + e
+s1 = 'me'
+
+
+index++ = 3
+3 % 2 = 1
+s2 = 'p' + alpha.substr(3,1)
+s2 = 'p' + u
+s2 = 'pu'
+
+
+index++ = 4
+4 % 2 = 0
+s1 = 'me' + a.s(4,1)
+s1 = 'meo'
+
+
+index++ = 5
+5 % 2 = 1
+s2 = 'pu' + a.s(5,1)
+s2 = 'pur'
+
+
+index++ = 6
+6 % 2 = 0
+s1 = 'meo' + a.s(6,1)
+s1 = 'meow'
+
+
+index++ = 7
+7 % 2 = 1
+s2 = 'pur' + a.s(7,1)
+s2 = 'purr'
+
+
